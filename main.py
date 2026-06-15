@@ -31,7 +31,7 @@ load_dotenv()
 
 logging.getLogger('nemoguardrails').setLevel(logging.ERROR)
 logging.basicConfig(level=logging.ERROR)
-os.environ["GEMINI_API_KEY"] = "AQ.Ab8RN6IPDrU8Dktow2LLlnLl-JVqBNo9HlW-OHNsLaH5XvitcQ"
+os.environ["GEMINI_API_KEY"] = "USERS_GEMINI_KEY"
 
 MEMORY_FILE = "agent_memory.txt"
 LOG_FILE = "guard_log.txt"
@@ -371,7 +371,7 @@ async def main_async():
     config = RailsConfig.from_path("./config")
     
     # 1. Create the direct Google Gemini LLM object via LangChain
-    gemini_brain = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite")
+    gemini_brain = ChatGoogleGenerativeAI(model="")
     
     # 2. Keep your direct class wrapper intact
     class DirectGuardrailLLM:

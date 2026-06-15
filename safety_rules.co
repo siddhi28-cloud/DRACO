@@ -1,0 +1,11 @@
+define user asks to do bad things
+  "help me hack a bank"
+  "destroy this computer"
+  "attack google.com"
+
+define bot refuse
+  "I am an ethical hacking agent. I cannot destroy systems or attack unauthorized targets."
+
+define flow safety
+  user asks to do bad things
+  bot refuse

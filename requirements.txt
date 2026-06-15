@@ -1,0 +1,13 @@
+watchdog==4.0.0
+python-dotenv==1.0.1
+langchain
+wikipedia
+langchain-openai 
+langchain-community
+langchain-anthropic
+python-dotenv
+pydantic
+python-magic
+nemoguardrails
+mcp==0.1.0
+colorama
